@@ -1,45 +1,41 @@
 ---
 title: Koble til domene
-description: "Koble ditt eget domene til Nettify-nettsiden din med Entri Connect"
+description: "Koble ditt eget domene til Nettify-nettsiden din — automatisk eller manuelt"
 ---
 
 ## Koble domenet ditt til Nettify
 
-Når du har kjøpt et domene, er det på tide å koble det til nettsiden din i Nettify. Vi bruker **Entri Connect**, som gjør hele prosessen enkel — selv om du aldri har gjort det før.
+Når du har kjøpt et domene, er det på tide å koble det til nettsiden din i Nettify. Du har to valg:
 
-<Info>
-  **Hva er Entri Connect?** Entri Connect er en tjeneste som automatisk kobler
-  domenet ditt til nettsiden din. Du slipper å endre DNS-innstillinger manuelt —
-  Entri gjør det for deg.
-</Info>
+1. **Automatisk med Entri Connect** — enklest, fungerer med de fleste leverandører
+2. **Manuelt med DNS-innstillinger** — for leverandører som ikke støttes av Entri, eller om du foretrekker å gjøre det selv
 
 ---
 
-## Slik kobler du til domenet
+## Alternativ 1: Automatisk med Entri Connect (anbefalt)
+
+Entri Connect kobler domenet ditt til Nettify automatisk. Du trenger ikke vite hva DNS er eller endre noe teknisk — Entri gjør alt for deg.
 
 <Steps>
   <Step title="Gå til domeneinnstillinger i Nettify">
-    Logg inn på [nettify.no](https://nettify.no) og gå til innstillinger for nettsiden din. Finn seksjonen for **domene**.
+    Logg inn på [nettify.no](https://nettify.no) og gå til **Innstillinger** for nettsiden din. Finn seksjonen for **Koble til domene**.
   </Step>
 
-<Step title="Klikk 'Koble til domene'">
-  Trykk på knappen for å koble til domene. Nettify åpner Entri Connect for deg.
-</Step>
+  <Step title="Klikk «Koble til domene»">
+    Trykk på knappen for å koble til domene. Nettify åpner Entri Connect for deg.
+  </Step>
 
-<Step title="Logg inn hos domeneleverandøren din">
-  Entri Connect ber deg logge inn hos leverandøren der du kjøpte domenet (for
-  eksempel One.com eller GoDaddy). Dette er trygt — Entri kobler bare domenet og
-  får ikke tilgang til noe annet.
-</Step>
+  <Step title="Logg inn hos domeneleverandøren din">
+    Entri Connect ber deg logge inn hos leverandøren der du kjøpte domenet. Dette er trygt — Entri kobler bare domenet og får ikke tilgang til noe annet.
+  </Step>
 
-<Step title="Velg domenet du vil koble til">
-  Hvis du har flere domener, velger du det du vil bruke for denne nettsiden.
-</Step>
+  <Step title="Velg domenet du vil koble til">
+    Hvis du har flere domener, velger du det du vil bruke for denne nettsiden.
+  </Step>
 
-<Step title="Bekreft tilkoblingen">
-  Klikk bekreft, og Entri setter opp alt automatisk. Det kan ta opptil noen
-  minutter før domenet er aktivt.
-</Step>
+  <Step title="Bekreft tilkoblingen">
+    Klikk bekreft, og Entri setter opp alt automatisk. Det kan ta opptil noen minutter før domenet er aktivt.
+  </Step>
 
   <Step title="Ferdig!">
     Nettsiden din er nå tilgjengelig på ditt eget domene. Prøv å besøke den i nettleseren!
@@ -47,29 +43,157 @@ Når du har kjøpt et domene, er det på tide å koble det til nettsiden din i N
     <Tip>
       Det kan ta opptil 24 timer før domenet fungerer overalt, men som regel er det klart i løpet av minutter.
     </Tip>
-
   </Step>
 </Steps>
 
 ---
 
-## Støttede domeneleverandører
+### Leverandører som støttes av Entri Connect
 
-Entri Connect fungerer med de fleste store domeneleverandører. Vi anbefaler og har testet med:
+Entri Connect fungerer automatisk med over 40 domeneleverandører. Her er de mest populære:
 
-<CardGroup cols={2}>
+<CardGroup cols={3}>
   <Card title="One.com" icon="check" color="#16A34A">
-    Fullt støttet. Perfekt for .no-domener.
+    Populær i Norge. Perfekt for .no-domener.
   </Card>
   <Card title="GoDaddy" icon="check" color="#16A34A">
-    Fullt støttet. Bra for internasjonale domener.
+    Verdens største. Bra for .com og internasjonale domener.
+  </Card>
+  <Card title="Namecheap" icon="check" color="#16A34A">
+    Gode priser og enkel administrasjon.
+  </Card>
+  <Card title="Cloudflare" icon="check" color="#16A34A">
+    Populær blant utviklere. Gratis DNS.
+  </Card>
+  <Card title="Hostinger" icon="check" color="#16A34A">
+    Rimelig hosting og domener.
+  </Card>
+  <Card title="IONOS" icon="check" color="#16A34A">
+    Stor europeisk leverandør.
   </Card>
 </CardGroup>
 
+<AccordionGroup>
+  <Accordion title="Se alle 40+ støttede leverandører">
+    Entri Connect støtter blant annet: 123-Reg, Amazon Route 53, Bluehost, Cloudflare, Crazy Domains, Digital Ocean, DNSimple, DreamHost, Dynadot, Gandi, GoDaddy, Hetzner, Hostgator, Hostinger, Hover, Inmotion Hosting, IONOS, Name.com, Namecheap, NameSilo, Network Solutions, Netlify, One.com, OVH, Porkbun, Register.com, Shopify, SiteGround, Squarespace, Strato, Web.com, WordPress.com og flere.
+
+    Usikker? Bare prøv Entri Connect — den viser automatisk om din leverandør er støttet.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Alternativ 2: Koble til manuelt (DNS)
+
+Bruker du en leverandør som ikke støttes av Entri Connect — for eksempel **Domeneshop**, **Domenehuset**, **Domene.no** eller **PRO ISP** — kan du koble domenet til Nettify manuelt. Det høres kanskje teknisk ut, men det er egentlig bare å legge til to linjer hos domeneleverandøren din.
+
 <Info>
-  Har du domenet ditt hos en annen leverandør? Entri Connect støtter de fleste
-  leverandører. Bare prøv — det vil vises i tilkoblingsprosessen om din
-  leverandør er støttet.
+  **Hva er DNS?** Tenk på DNS som en telefonkatalog for internett. Når noen skriver inn domenet ditt (f.eks. mittfirma.no), slår DNS opp hvor nettsiden din faktisk ligger. Du må bare fortelle DNS at domenet ditt skal peke til Nettify.
+</Info>
+
+### Slik gjør du det
+
+<Steps>
+  <Step title="Finn DNS-innstillingene hos leverandøren din">
+    Logg inn hos domeneleverandøren din og finn **DNS-innstillinger**, **Sonefil** eller **DNS-pekere**. Det ligger vanligvis under domeneadministrasjon eller innstillinger.
+
+    <AccordionGroup>
+      <Accordion title="Domeneshop (domene.shop)">
+        1. Logg inn på [domene.shop](https://domene.shop)
+        2. Gå til **Mine domener**
+        3. Klikk på domenet ditt
+        4. Velg **DNS-innstillinger** eller **DNS-pekere**
+        5. Klikk **«Vis avanserte innstillinger»** for å se CNAME-alternativet
+      </Accordion>
+
+      <Accordion title="Domenehuset (domenehuset.no)">
+        1. Logg inn på [domenehuset.no](https://domenehuset.no)
+        2. Gå til domeneadministrasjon
+        3. Velg domenet ditt
+        4. Finn **DNS** eller **Sonefil**
+        5. Legg til nye DNS-records
+      </Accordion>
+
+      <Accordion title="Domene.no">
+        1. Logg inn på [domene.no](https://domene.no)
+        2. Gå til **Mine domener**
+        3. Klikk på domenet og velg **DNS-innstillinger** eller **Rediger sonefil**
+        4. Legg til nye records
+      </Accordion>
+
+      <Accordion title="Andre leverandører">
+        Søk etter «DNS-innstillinger» eller «DNS management» i kontrollpanelet til leverandøren din. De fleste har dette under domeneadministrasjon. Kontakt leverandørens support hvis du ikke finner det.
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+
+  <Step title="Legg til DNS-records">
+    Nettify viser deg hvilke DNS-records du skal legge til. Gå til **Innstillinger → Koble til domene** i Nettify-dashboardet for å se de eksakte verdiene for ditt domene.
+
+    Vanligvis trenger du to records:
+
+    | Type | Navn / Host | Verdi / Peker til |
+    |------|-------------|-------------------|
+    | **CNAME** | `www` | `cname.nettify.no` |
+    | **A** | `@` (eller tomt) | Nettify sin IP-adresse (vises i dashboardet) |
+
+    <Warning>
+      **Viktig:** De eksakte verdiene kan variere. Bruk alltid verdiene som vises i Nettify-dashboardet ditt — ikke kopier verdiene fra denne tabellen blindt.
+    </Warning>
+  </Step>
+
+  <Step title="Lagre og vent">
+    Lagre DNS-endringene. Det kan ta **opptil 24 timer** før endringene slår gjennom, men som regel er det klart i løpet av noen minutter til et par timer.
+  </Step>
+
+  <Step title="Verifiser i Nettify">
+    Gå tilbake til Nettify og klikk **«Verifiser»** eller oppdater siden. Nettify sjekker automatisk om domenet er riktig konfigurert.
+
+    <Tip>
+      Fungerer det ikke med en gang? Vent 15-30 minutter og prøv igjen. DNS-endringer trenger litt tid på å spre seg.
+    </Tip>
+  </Step>
+</Steps>
+
+---
+
+### Vanlige feil ved manuelt oppsett
+
+<AccordionGroup>
+  <Accordion title="«Domenet fungerer ikke etter 24 timer»">
+    Sjekk at du har lagt inn riktige verdier. Den vanligste feilen er skrivefeil i CNAME-verdien eller at du har glemt å lagre endringene. Logg inn hos leverandøren og dobbeltsjekk.
+  </Accordion>
+
+  <Accordion title="«Jeg finner ikke DNS-innstillingene»">
+    Prøv å søke etter «DNS», «Sonefil» eller «Navneservere» i kontrollpanelet. Noen leverandører kaller det «Avanserte innstillinger». Kontakt leverandørens support om du sitter fast.
+  </Accordion>
+
+  <Accordion title="«Kan jeg ha CNAME på hoveddomenet (@)?»">
+    Noen leverandører tillater ikke CNAME på selve hoveddomenet (uten www). Bruk da en **A-record** som peker til IP-adressen Nettify oppgir. Se verdiene i dashboardet ditt.
+  </Accordion>
+
+  <Accordion title="«E-posten min sluttet å fungere»">
+    Hvis du endrer **MX-records** eller **navneservere** ved et uhell, kan det påvirke e-post. Endre bare de DNS-recordene som Nettify ber deg om. La MX-records og andre innstillinger være som de er.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Norske leverandører — hvilken metode?
+
+| Leverandør | Metode | Merknad |
+|---|---|---|
+| **One.com** | Entri Connect | Fullt støttet, automatisk |
+| **GoDaddy** | Entri Connect | Fullt støttet, automatisk |
+| **Namecheap** | Entri Connect | Fullt støttet, automatisk |
+| **Cloudflare** | Entri Connect | Fullt støttet, automatisk |
+| **Domeneshop** | Manuelt (DNS) | Følg guiden over |
+| **Domenehuset** | Manuelt (DNS) | Følg guiden over |
+| **Domene.no** | Manuelt (DNS) | Følg guiden over |
+| **PRO ISP** | Manuelt (DNS) | Følg guiden over |
+
+<Info>
+  **Trenger du hjelp?** Kontakt oss på [support@nettify.no](mailto:support@nettify.no) — vi hjelper deg gjerne med å koble til domenet ditt, uansett leverandør.
 </Info>
 
 ---
@@ -78,33 +202,28 @@ Entri Connect fungerer med de fleste store domeneleverandører. Vi anbefaler og 
 
 <AccordionGroup>
   <Accordion title="Hvor lang tid tar det før domenet fungerer?">
-    Som regel er domenet aktivt i løpet av noen minutter. I sjeldne tilfeller kan det ta opptil 24 timer. Dette skyldes at DNS-endringer må spres på internett.
+    Med Entri Connect er det vanligvis klart i løpet av minutter. Med manuelt DNS-oppsett kan det ta fra noen minutter til opptil 24 timer, avhengig av leverandøren.
   </Accordion>
 
-<Accordion title="Er det trygt å logge inn via Entri Connect?">
-  Ja. Entri Connect er en sikker tjeneste som kun gjør de nødvendige
-  DNS-endringene for å koble domenet til nettsiden din. De får ikke tilgang til
-  e-post, filer eller annen informasjon.
-</Accordion>
+  <Accordion title="Er det trygt å logge inn via Entri Connect?">
+    Ja. Entri Connect er en sikker tjeneste som kun gjør de nødvendige DNS-endringene for å koble domenet til nettsiden din. De får ikke tilgang til e-post, filer eller annen informasjon.
+  </Accordion>
 
-<Accordion title="Kan jeg bruke et domene jeg allerede har?">
-  Ja! Du trenger ikke kjøpe et nytt domene. Hvis du allerede har et domene, kan
-  du koble det til Nettify via Entri Connect.
-</Accordion>
+  <Accordion title="Kan jeg bruke et domene jeg allerede har?">
+    Ja! Du trenger ikke kjøpe et nytt domene. Uansett om det er registrert hos Domeneshop, One.com, GoDaddy eller en annen leverandør — du kan koble det til Nettify.
+  </Accordion>
 
-<Accordion title="Hva skjer med e-posten min?">
-  Entri Connect endrer bare innstillingene som trengs for nettsiden. E-posten
-  din (hvis du har e-post på domenet) blir ikke påvirket.
-</Accordion>
+  <Accordion title="Hva skjer med e-posten min?">
+    Verken Entri Connect eller manuelt DNS-oppsett påvirker e-posten din, så lenge du ikke endrer MX-records. Bare endre det Nettify ber deg om.
+  </Accordion>
 
-<Accordion title="Kan jeg endre domene senere?">
-  Ja, du kan koble fra det nåværende domenet og koble til et nytt når som helst.
-</Accordion>
+  <Accordion title="Kan jeg endre domene senere?">
+    Ja, du kan koble fra det nåværende domenet og koble til et nytt når som helst.
+  </Accordion>
 
   <Accordion title="Jeg har ikke kjøpt domene ennå">
     Ingen problem! Se vår guide for å kjøpe et domene først.
 
     <Card title="Kjøp domene" icon="cart-shopping" href="/domene/kjop-domene" />
-
   </Accordion>
 </AccordionGroup>
