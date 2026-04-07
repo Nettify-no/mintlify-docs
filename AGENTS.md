@@ -1,33 +1,25 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# Nettify dokumentasjon — prosjektinstruksjoner
 
-# Documentation project instructions
+## Om dette prosjektet
 
-## About this project
+- Dokumentasjonsside for Nettify, bygget på [Mintlify](https://mintlify.com)
+- Sider er MDX-filer med YAML frontmatter
+- Konfigurasjon i `docs.json`
+- Kjør `npx mintlify dev` for å forhåndsvise lokalt
+- Kjør `npx mintlify broken-links` for å sjekke lenker
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Run `mint dev` to preview locally
-- Run `mint broken-links` to check links
+## Terminologi
 
-## Terminology
+- Bruk «Nettify AI» — aldri «AI-en» alene
+- Bruk «manuell editor» for redigeringsverktøyet
+- Bruk «seksjon» for deler av en nettside
+- Bruk «domene» — ikke «URL» eller «adresse» når vi snakker om domenenavn
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+## Stil
 
-## Style preferences
-
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
-
-## Content boundaries
-
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- Skriv på norsk bokmål
+- Bruk et enkelt, vennlig språk tilpasset SMB-eiere uten teknisk bakgrunn
+- Bruk aktiv form og «du»
+- Hold setningene korte — én idé per setning
+- Bruk sentence case for overskrifter
+- Fet skrift for UI-elementer: Klikk **Lagre endringer**
