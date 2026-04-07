@@ -2,6 +2,9 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Nettify Hjelp",
+  "appearance": {
+    "default": "light"
+  },
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -9,9 +12,10 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guider",
+        "language": "no",
+        "default": true,
         "groups": [
           {
             "group": "Kom i gang",
@@ -45,6 +49,44 @@
           {
             "group": "Domene",
             "pages": ["domene/kjop-domene", "domene/koble-til-domene"]
+          }
+        ]
+      },
+      {
+        "language": "en",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": ["en/index", "en/kom-i-gang"]
+          },
+          {
+            "group": "Nettify AI",
+            "pages": [
+              "en/ai/snakk-med-ai",
+              "en/ai/lag-ny-seksjon",
+              "en/ai/endre-bilder",
+              "en/ai/endre-tekst",
+              "en/ai/lag-ny-side",
+              "en/ai/html-widget",
+              "en/ai/booking-modal",
+              "en/ai/kontakt-modal",
+              "en/ai/oversettelse",
+              "en/ai/smarte-funksjoner"
+            ]
+          },
+          {
+            "group": "Manual editing",
+            "pages": [
+              "en/redigering/manuell-editor",
+              "en/redigering/endre-tekst-og-innhold",
+              "en/redigering/endre-farger-og-design",
+              "en/redigering/endre-bilder-manuelt",
+              "en/redigering/endre-spacing-og-storrelse"
+            ]
+          },
+          {
+            "group": "Domain",
+            "pages": ["en/domene/kjop-domene", "en/domene/koble-til-domene"]
           }
         ]
       }
