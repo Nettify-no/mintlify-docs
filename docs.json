@@ -119,6 +119,11 @@
       "href": "https://nettify.no/dashboard/"
     }
   },
+  "integrations": {
+    "posthog": {
+      "apiKey": "phc_zhZOyyomrBhAooUt7yDWNsUHRNgKOGCVxphuVdkPPif"
+    }
+  },
   "footer": {
     "socials": {
       "facebook": "https://www.facebook.com/nettify.no",
