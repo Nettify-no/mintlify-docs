@@ -24,7 +24,12 @@
               "ai/lag-ny-seksjon",
               "ai/endre-bilder",
               "ai/endre-tekst",
-              "ai/lag-ny-side"
+              "ai/lag-ny-side",
+              "ai/html-widget",
+              "ai/booking-modal",
+              "ai/kontakt-modal",
+              "ai/oversettelse",
+              "ai/smarte-funksjoner"
             ]
           },
           {

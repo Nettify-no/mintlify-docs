@@ -1,0 +1,82 @@
+---
+title: Legg til HTML-widget
+description: 'Bygg inn bookingsystemer, kart, chat-bobler og annet med egendefinert HTML-kode'
+---
+
+## Hva er en HTML-widget?
+
+En HTML-widget lar deg bygge inn innhold fra andre tjenester direkte på nettsiden din. Mange verktøy du allerede bruker — som Calendly, Google Maps, Tidycal eller Trustpilot — gir deg en HTML-kode du kan lime inn for å vise innholdet på din nettside.
+
+<Info>
+  Du trenger ikke kunne koding. Alt du trenger er å kopiere koden fra tjenesten du bruker, og fortelle Nettify AI hvor du vil ha den.
+</Info>
+
+---
+
+## Slik legger du til en HTML-widget
+
+<Steps>
+  <Step title="Finn embed-koden fra tjenesten din">
+    De fleste tjenester har en **«Embed»**- eller **«Bygg inn»**-knapp som gir deg en HTML-kode. Kopier denne koden.
+
+    <Tip>
+      Koden ser vanligvis ut som `<iframe src="..."></iframe>` eller `<script>...</script>`. Ikke bekymre deg for hva den betyr — bare kopier alt sammen.
+    </Tip>
+  </Step>
+
+  <Step title="Fortell Nettify AI hva du vil gjøre">
+    Lim inn koden i chatten og beskriv hvor du vil ha widgeten.
+  </Step>
+
+  <Step title="Se over resultatet">
+    Nettify AI legger inn widgeten på siden din. Sjekk at den vises riktig i forhåndsvisningen.
+  </Step>
+</Steps>
+
+---
+
+## Eksempler på instruksjoner
+
+```
+«Legg til denne Calendly-widgeten i kontaktseksjonen:
+<iframe src="https://calendly.com/mittfirma/30min" width="100%" height="700"></iframe>»
+```
+
+```
+«Bygg inn dette Google Maps-kartet nederst på siden:
+<iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="450"></iframe>»
+```
+
+```
+«Legg til denne Trustpilot-widgeten under kundeomtalene:
+[lim inn kode her]»
+```
+
+---
+
+## Populære widgets for bedrifter
+
+<CardGroup cols={2}>
+  <Card title="Bookingsystem" icon="calendar-check">
+    Calendly, Tidycal, eller Acuity — la kundene booke tid direkte på nettsiden.
+  </Card>
+  <Card title="Google Maps" icon="map-location-dot">
+    Vis bedriftens beliggenhet med et interaktivt kart.
+  </Card>
+  <Card title="Anmeldelser" icon="star">
+    Vis Trustpilot-, Google- eller Facebook-anmeldelser automatisk.
+  </Card>
+  <Card title="Chat-widget" icon="comments">
+    Legg til en chat-boble fra Tidio, Crisp eller lignende.
+  </Card>
+  <Card title="Sosiale medier" icon="share-nodes">
+    Bygg inn Instagram-feed, Facebook-side eller YouTube-videoer.
+  </Card>
+  <Card title="Betalingslenker" icon="credit-card">
+    Legg inn betalingsknapper fra Vipps, Stripe eller PayPal.
+  </Card>
+</CardGroup>
+
+<Warning>
+  Bruk kun embed-koder fra tjenester du stoler på. Ukjent kode kan påvirke nettsiden din negativt.
+</Warning>
