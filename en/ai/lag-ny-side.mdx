@@ -7,23 +7,6 @@ description: 'Expand your website with additional pages'
 
 Most websites have more than just a homepage. With Nettify you can easily create new subpages to organize your content.
 
-<CardGroup cols={2}>
-  <Card title="Typical pages for businesses" icon="building">
-    - Homepage
-    - About us
-    - Services / Products
-    - Pricing
-    - Contact
-  </Card>
-  <Card title="Extra pages to consider" icon="sparkles">
-    - Blog / News
-    - Gallery / Projects
-    - FAQ
-    - Careers / Open positions
-    - Privacy / Terms
-  </Card>
-</CardGroup>
-
 ---
 
 ## How to create a new page
@@ -31,10 +14,6 @@ Most websites have more than just a homepage. With Nettify you can easily create
 <Steps>
   <Step title="Tell Nettify AI what the page should be about">
     Give a clear description of what the page should contain and who it's for.
-
-    <Tip>
-      **Example:** "Create a new page called 'Our Services'. It should show our four main services: painting, carpentry, plumbing and electrical work. Each service should have a short description and an image."
-    </Tip>
   </Step>
 
   <Step title="Nettify AI builds the page for you">
@@ -43,46 +22,156 @@ Most websites have more than just a homepage. With Nettify you can easily create
 
   <Step title="Review and adjust">
     Go through the page. Want to change something? Just say so.
-
-    - "Add prices to each service"
-    - "Change the order so painting comes first"
-    - "Add a contact button at the bottom"
   </Step>
 
   <Step title="The page is automatically added to the menu">
-    The new page appears in your website's navigation so visitors can easily find it.
+    The new page appears in your website's navigation.
   </Step>
 </Steps>
 
 ---
 
-## Examples of new pages
+## Ready-made prompts for common pages
 
-<AccordionGroup>
-  <Accordion title="Services page">
-    "Create a page for 'Services' with three sections: Residential Sales, Commercial Property, and Rental Management. Each section should have a heading, a short text and a 'Read more' button."
-  </Accordion>
+### Services page
 
-  <Accordion title="About us page">
-    "Create an 'About us' page. We're called Fjordbygg Ltd and have been in business since 2008. We have 12 employees in Stavanger and specialize in renovation of older buildings. Show the team with names and titles."
-  </Accordion>
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
 
-  <Accordion title="Contact page">
-    "Create a contact page with address, phone, email and a contact form. Our address is 15 Main Street, Oslo. Add a map as well."
-  </Accordion>
+```
+Create a new page called "Our Services". It should have:
 
-  <Accordion title="Pricing page">
-    "Create a pricing page for our gym with three subscriptions: Basic ($29/mo), Plus ($44/mo) and Premium ($59/mo). Show what's included in each."
-  </Accordion>
+1. Hero section:
+   - Heading: "Services We Offer"
+   - Short intro: "We help you with everything from [service 1] to [service 3]."
+   - A nice background image that fits our industry
 
-  <Accordion title="FAQ page">
-    "Create a FAQ page with answers to the most common questions we get:
-    - How do I place an order?
-    - What is the delivery time?
-    - Can I return items?
-    - Do you offer a warranty?"
-  </Accordion>
-</AccordionGroup>
+2. Services section with 3-4 services in a clean grid, each with:
+   - Icon or image
+   - Service name
+   - Description of 2-3 sentences
+   - "Contact us" button
+
+3. "How We Work" section with 3-4 numbered steps with icons and lines between them
+
+4. CTA section at the bottom: "Ready to get started?" with a contact button
+
+Design: professional, clean and modern with good spacing between sections.
+```
+
+---
+
+### About us page
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Create an "About Us" page. Here is the information:
+
+Company name: [name]
+Founded: [year]
+Location: [location]
+Number of employees: [number]
+Industry: [industry]
+About us: [describe the company in a few sentences]
+
+The page should have a great and professional design with:
+1. Hero with heading "About [company name]" and an inspiring background image
+2. An "Our Story" section with 2-3 paragraphs and an image beside the text
+3. An "Our Values" section with 3 values as icons with short text in a clean grid
+4. A "Meet the Team" section with profile cards (round image, name, title, short bio)
+5. A CTA at the bottom: "Want to learn more? Get in touch!" with a nice button
+
+Design: good spacing, modern typography and subtle animations.
+```
+
+---
+
+### Contact page
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Create a contact page with a clean and inviting design. It should have:
+
+1. Heading: "Contact Us"
+2. Short intro: "We're here to help. Send us a message, give us a call, or stop by."
+3. Two columns with a nice layout:
+   - Left: Contact form with fields for Name, Email, Phone, Subject (dropdown), Message and a "Send message" button with hover effect
+   - Right: Contact info with icons for phone, email, address and opening hours. Nicely designed with good spacing.
+4. Full-width Google Maps map below the columns showing our address: [your address]
+5. FAQ section with 3-4 common questions about contact and response time
+
+Contact info:
+- Phone: [number]
+- Email: [email]
+- Address: [address]
+- Opening hours: Mon-Fri 08-16
+
+Design: clean, modern, with rounded corners on form fields and subtle shadows.
+```
+
+---
+
+### Pricing page
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Create a pricing page with a professional and clear design. It should have:
+
+1. Heading: "Pricing"
+2. Short intro: "Transparent pricing with no hidden costs."
+3. Pricing cards in a clean grid with visual hierarchy:
+   - [Service 1]: [price] — includes [what's included]
+   - [Service 2]: [price] — includes [what's included]
+   - [Service 3]: [price] — includes [what's included]
+   The middle card should be highlighted as "Most Popular" with an accent color
+4. Each card should have a checklist of what's included and a "Choose plan" button
+5. A FAQ section with questions about pricing
+6. CTA at the bottom: "Not sure what you need? Contact us for a custom quote."
+
+Design: modern pricing table layout with rounded corners, subtle shadows and good typography.
+```
+
+---
+
+### FAQ page
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Create a FAQ page with a tidy and user-friendly design. It should have:
+
+1. Heading: "Frequently Asked Questions"
+2. Short intro: "Here you'll find answers to the most common questions we receive."
+3. Questions organized in categories with accordion elements:
+
+Category: "General"
+- "What does [company name] do?" — [answer]
+- "Where are you located?" — [answer]
+
+Category: "Pricing and Payment"
+- "How much do the services cost?" — [answer]
+- "What payment methods do you accept?" — [answer]
+
+Category: "Delivery and Warranty"
+- "What is the delivery time?" — [answer]
+- "Do you offer a warranty?" — [answer]
+
+4. CTA at the bottom: "Have other questions?" with a contact button
+
+Design: clean and organized with good spacing. Categories should have clear headings. Accordion elements with plus/minus icons and smooth animations.
+```
 
 ---
 

@@ -9,65 +9,92 @@ A contact popup is a window that opens when a customer clicks **"Contact us"** o
 
 ---
 
-## How to create a contact popup
+## Ready-made prompts for contact popups
 
-<Steps>
-  <Step title="Describe the form you need">
-    Tell Nettify AI which fields you want in the contact form.
-  </Step>
-
-  <Step title="Choose where the button goes">
-    Tell Nettify AI where the **"Contact us"** button should be — in the navigation, in a section, or as a floating button in the corner of the page.
-  </Step>
-
-  <Step title="Customize design and text">
-    Adjust the heading, button text, colors and confirmation message to your liking.
-  </Step>
-</Steps>
-
----
-
-## Example instructions
-
-```
-"Create a contact popup that opens from the 'Contact us' button in the menu.
-Fields: Name, Email, Phone and Message.
-Show a confirmation: 'Thank you for your inquiry! We'll respond within 24 hours.'"
-```
-
-```
-"Add a floating 'Get in touch' button in the bottom right corner on all pages.
-When clicked, a popup opens with a short contact form."
-```
-
-```
-"Create a 'Get a free quote' popup.
-Fields: Company name, Contact person, Email, Phone and Description of needs.
-Place the button on the services page."
-```
-
----
-
-## Choose the right type of contact form
-
-<CardGroup cols={2}>
-  <Card title="Simple contact" icon="envelope">
-    Name, email and message. Perfect for general inquiries.
-  </Card>
-  <Card title="Quote request" icon="file-invoice">
-    Add fields for service type, budget or project description.
-  </Card>
-  <Card title="Feedback" icon="message-smile">
-    Short form for collecting customer feedback.
-  </Card>
-  <Card title="Support" icon="headset">
-    Include order number or subject to sort inquiries.
-  </Card>
-</CardGroup>
+### Simple contact popup
 
 <Tip>
-  **Combine with booking!** You can have both a contact popup and a [booking popup](/en/ai/booking-modal) on the same page — with different buttons.
+  **Copy this prompt and paste it into Nettify AI:**
 </Tip>
+
+```
+Create a contact popup with a clean and modern design that opens from the "Contact us" button in the menu.
+
+The popup should have:
+- Heading: "Send Us a Message"
+- Short text: "We respond to all inquiries within 24 hours."
+- Form fields with nice design:
+  - Name (required)
+  - Email (required)
+  - Phone (optional)
+  - Message (large text field, required)
+- "Send message" button in the accent color with hover effect
+- Close button (X) in the top right corner
+
+Design: white modal with rounded corners, dark overlay background, subtle shadow. Form fields should have clean borders, good labels and focus effect. Smooth animation.
+
+Confirmation after submission: "Thank you for your inquiry! We'll get back to you as soon as possible."
+```
+
+---
+
+### Quote request
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Create a "Get a Free Quote" popup with a professional design.
+
+The popup should have:
+- Heading: "Get a Free Quote"
+- Short text: "Tell us about your project and we'll send you a quote."
+- Form fields:
+  - Company name (optional)
+  - Contact person (required)
+  - Email (required)
+  - Phone (required)
+  - Type of service (dropdown): "[Service 1]", "[Service 2]", "[Service 3]", "Other"
+  - Budget (dropdown): "Under $1,000", "$1,000 - $5,000", "Over $5,000", "Not sure"
+  - Description of needs (text field)
+- "Request quote" button
+- Close button
+
+Design: clean and trust-building. Good spacing between fields. Labels above each field.
+
+Confirmation: "Thank you! We'll send you a quote within 2 business days."
+
+Place the "Get a quote" button on the homepage, services page and in the menu.
+```
+
+---
+
+### Floating contact button
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Add a floating "Get in touch" button in the bottom right corner on all pages with a nice design.
+
+The button should:
+- Be round with a message icon
+- Have the accent color with hover effect
+- Always be visible when scrolling
+- Not block important content on mobile
+
+When clicked, a popup opens with:
+- Heading: "How can we help?"
+- Form fields: Name, Email, Message
+- "Send" button
+- Close button
+
+Design: modern chat bubble style. Smooth animation on open.
+
+Confirmation: "Received! We'll be in touch soon."
+```
 
 ---
 
@@ -77,4 +104,8 @@ All messages submitted through the contact popup land under the **"Inquiries"** 
 
 <Tip>
   **Have Nettify PRO?** You'll also receive email notifications each time someone submits an inquiry — so you can respond quickly.
+</Tip>
+
+<Tip>
+  **Combine with booking!** You can have both a contact popup and a [booking popup](/en/ai/booking-modal) on the same page — with different buttons.
 </Tip>

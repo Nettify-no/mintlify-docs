@@ -9,66 +9,98 @@ A booking popup (also called a modal) is a window that appears when a customer c
 
 ---
 
-## How to create a booking popup
+## Ready-made prompts for booking popups
 
-<Steps>
-  <Step title="Describe what the popup should contain">
-    Tell Nettify AI what kind of booking you need and which fields the customer should fill out.
-  </Step>
+### General booking popup
 
-  <Step title="Choose where the button should go">
-    Tell Nettify AI where on the website the **"Book appointment"** button should appear — for example in the hero section, on the services page, or in the menu.
-  </Step>
-
-  <Step title="Customize the look">
-    Ask Nettify AI to adjust colors, text or fields to match your business.
-  </Step>
-</Steps>
-
----
-
-## Example instructions
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
 
 ```
-"Create a booking popup that opens when you click 'Book appointment'.
-The form should have fields for: Name, Phone, Email, Preferred date, and Message.
-Place the button in the hero section."
-```
+Create a booking popup with a nice and professional design that opens when you click the "Book appointment" button.
 
-```
-"Create a booking modal for our hair salon.
-The customer should choose between: Men's haircut, Women's haircut, or Coloring.
-Add fields for name, phone and preferred time."
-```
+The popup should have:
+- Heading: "Book an Appointment"
+- Short text: "Fill out the form below and we'll get in touch to confirm."
+- Form fields with nice design (rounded corners, good spacing):
+  - Name (required)
+  - Phone (required)
+  - Email (required)
+  - Preferred date (date picker)
+  - Message (optional text field)
+- "Submit booking" button in the accent color
+- Close button (X) in the top right corner
 
-```
-"Add a 'Book a consultation' button on the services page.
-When clicked, a popup opens with a short form:
-Name, Address, Phone, and a description of the job."
+Design: modern modal with dark overlay background, white popup with rounded corners and subtle shadow. Smooth open/close animation.
+
+Confirmation message after submission: "Thank you for your booking! We'll confirm the time within 24 hours."
+
+Place the "Book appointment" button in the hero section and in the menu.
 ```
 
 ---
 
-## Tips for a good booking popup
+### Hair salon / Beauty salon
 
-<CardGroup cols={2}>
-  <Card title="Keep it short" icon="list-check">
-    Don't ask for more information than necessary. Name, phone and preferred time is often enough to get started.
-  </Card>
-  <Card title="Clear button text" icon="hand-pointer">
-    Use specific text like **"Book appointment"**, **"Schedule a visit"**, or **"Get a quote"** — avoid generic buttons like "Submit".
-  </Card>
-  <Card title="Confirmation message" icon="circle-check">
-    Ask Nettify AI to add a confirmation after submission, like "Thank you! We'll contact you within 24 hours."
-  </Card>
-  <Card title="Mobile friendly" icon="mobile-screen">
-    Nettify AI automatically creates popups that work well on both mobile and desktop.
-  </Card>
-</CardGroup>
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
 
-<Info>
-  **Using an external booking system?** You can also embed Calendly, Tidycal or similar in a popup. See the guide for [HTML widgets](/en/ai/html-widget).
-</Info>
+```
+Create a booking popup for our hair salon with an elegant and inviting design.
+
+The popup should have:
+- Heading: "Book an Appointment"
+- Short text: "Choose a treatment and time — we look forward to seeing you!"
+- Form fields:
+  - Name
+  - Phone
+  - Treatment (dropdown): "Men's Haircut", "Women's Haircut", "Coloring", "Styling", "Other"
+  - Preferred day (date picker)
+  - Preferred time (dropdown): "Morning (08-11)", "Midday (11-14)", "Afternoon (14-17)"
+  - Special requests (optional text field)
+- "Book appointment" button
+- Close button
+
+Design: warm and inviting. Use soft colors and rounded corners. Responsive for mobile.
+
+Confirmation: "Thank you! We'll send you a confirmation by text shortly."
+
+Place the "Book appointment" button in the hero section and as a fixed button at the bottom on mobile.
+```
+
+---
+
+### Contractor / Site inspection
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Create a popup for booking a site inspection with a professional and trust-building design.
+
+The popup should have:
+- Heading: "Book a Free Site Inspection"
+- Short text: "We'll come to you and provide a no-obligation quote."
+- Form fields:
+  - Name (required)
+  - Phone (required)
+  - Email
+  - Address (required)
+  - Type of job (dropdown): "Plumbing", "Electrical Work", "Painting", "Carpentry", "Other"
+  - Job description (text field)
+  - Preferred week (dropdown with upcoming weeks)
+- "Book inspection" button
+- Close button
+
+Design: professional with good spacing, clear labels above each field and a clean layout.
+
+Confirmation: "Thank you! We'll contact you within 1 business day to arrange a time."
+
+Place the "Book inspection" button on the homepage and on the services page.
+```
 
 ---
 
@@ -79,3 +111,7 @@ All bookings submitted through the popup land under the **"Inquiries"** tab at t
 <Tip>
   **Have Nettify PRO?** You'll also receive email notifications each time someone submits a booking — so you never miss an inquiry.
 </Tip>
+
+<Info>
+  **Using an external booking system?** You can also embed Calendly, Tidycal or similar in a popup. See the guide for [HTML widgets](/en/ai/html-widget).
+</Info>

@@ -9,65 +9,92 @@ En kontakt-popup er et vindu som åpnes når kunden klikker på **«Kontakt oss�
 
 ---
 
-## Slik lager du en kontakt-popup
+## Ferdige prompts for kontakt-popups
 
-<Steps>
-  <Step title="Beskriv skjemaet du trenger">
-    Fortell Nettify AI hvilke felter du vil ha i kontaktskjemaet.
-  </Step>
-
-  <Step title="Velg plassering for knappen">
-    Si hvor **«Kontakt oss»**-knappen skal ligge — i navigasjonen, i en seksjon, eller som en flytende knapp i hjørnet av siden.
-  </Step>
-
-  <Step title="Tilpass design og tekst">
-    Juster overskrift, knappetekst, farger og bekreftelsesmelding etter din smak.
-  </Step>
-</Steps>
-
----
-
-## Eksempler på instruksjoner
-
-```
-«Lag en kontakt-popup som åpnes fra 'Kontakt oss'-knappen i menyen.
-Felter: Navn, E-post, Telefon og Melding.
-Vis en bekreftelse: 'Takk for din henvendelse! Vi svarer innen 24 timer.'»
-```
-
-```
-«Legg til en flytende 'Ta kontakt'-knapp nederst til høyre på alle sider.
-Når man klikker, åpnes en popup med et kort kontaktskjema.»
-```
-
-```
-«Lag en 'Få et uforpliktende tilbud'-popup.
-Felter: Bedriftsnavn, Kontaktperson, E-post, Telefon og Beskrivelse av behov.
-Legg knappen på tjenestesiden.»
-```
-
----
-
-## Velg riktig type kontaktskjema
-
-<CardGroup cols={2}>
-  <Card title="Enkel kontakt" icon="envelope">
-    Navn, e-post og melding. Perfekt for generelle henvendelser.
-  </Card>
-  <Card title="Tilbudsforespørsel" icon="file-invoice">
-    Legg til felter for type tjeneste, budsjett eller prosjektbeskrivelse.
-  </Card>
-  <Card title="Tilbakemelding" icon="message-smile">
-    Kort skjema for å samle inn tilbakemeldinger fra kunder.
-  </Card>
-  <Card title="Support" icon="headset">
-    Inkluder ordrenummer eller emne for å sortere henvendelser.
-  </Card>
-</CardGroup>
+### Enkel kontakt-popup
 
 <Tip>
-  **Kombiner med booking!** Du kan ha både en kontakt-popup og en [booking-popup](/ai/booking-modal) på samme side — med forskjellige knapper.
+  **Kopier denne prompten og lim inn i Nettify AI:**
 </Tip>
+
+```
+Lag en kontakt-popup med et rent og moderne design som åpnes fra «Kontakt oss»-knappen i menyen.
+
+Popupen skal ha:
+- Overskrift: «Send oss en melding»
+- Kort tekst: «Vi svarer på alle henvendelser innen 24 timer.»
+- Skjemafelt med fint design:
+  - Navn (påkrevd)
+  - E-post (påkrevd)
+  - Telefon (valgfritt)
+  - Melding (stort tekstfelt, påkrevd)
+- «Send melding»-knapp i accentfargen med hover-effekt
+- Lukk-knapp (X) øverst til høyre
+
+Design: hvit modal med avrundede hjørner, mørk overlay-bakgrunn, subtil skygge. Skjemafeltene skal ha rene kanter, gode labels og fokus-effekt. Smooth animasjon.
+
+Bekreftelse etter innsending: «Takk for din henvendelse! Vi svarer deg så raskt vi kan.»
+```
+
+---
+
+### Tilbudsforespørsel
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Lag en «Få et uforpliktende tilbud»-popup med et profesjonelt design.
+
+Popupen skal ha:
+- Overskrift: «Få et uforpliktende tilbud»
+- Kort tekst: «Fortell oss om prosjektet ditt, så sender vi et tilbud.»
+- Skjemafelt:
+  - Bedriftsnavn (valgfritt)
+  - Kontaktperson (påkrevd)
+  - E-post (påkrevd)
+  - Telefon (påkrevd)
+  - Type tjeneste (dropdown): «[Tjeneste 1]», «[Tjeneste 2]», «[Tjeneste 3]», «Annet»
+  - Budsjett (dropdown): «Under 10 000 kr», «10 000 – 50 000 kr», «Over 50 000 kr», «Usikker»
+  - Beskrivelse av behov (tekstfelt)
+- «Be om tilbud»-knapp
+- Lukk-knapp
+
+Design: rent og tillitvekkende. God spacing mellom feltene. Labels over hvert felt.
+
+Bekreftelse: «Takk! Vi sender deg et tilbud innen 2 virkedager.»
+
+Legg «Få tilbud»-knappen på forsiden, tjenestesiden og i menyen.
+```
+
+---
+
+### Flytende kontaktknapp
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Legg til en flytende «Ta kontakt»-knapp nederst til høyre på alle sider med et fint design.
+
+Knappen skal:
+- Være rund med et meldings-ikon
+- Ha accentfarge med hover-effekt
+- Alltid være synlig når man scroller
+- Ikke blokkere viktig innhold på mobil
+
+Når man klikker, åpnes en popup med:
+- Overskrift: «Hvordan kan vi hjelpe?»
+- Skjemafelt: Navn, E-post, Melding
+- «Send»-knapp
+- Lukk-knapp
+
+Design: moderne chat-boble-stil. Smooth animasjon ved åpning.
+
+Bekreftelse: «Mottatt! Vi tar kontakt snart.»
+```
 
 ---
 
@@ -77,4 +104,8 @@ Alle meldinger som sendes inn via kontakt-popupen, havner under **«Henvendelser
 
 <Tip>
   **Har du Nettify PRO?** Da får du også varsel på e-post hver gang noen sender inn en henvendelse — slik at du kan svare raskt.
+</Tip>
+
+<Tip>
+  **Kombiner med booking!** Du kan ha både en kontakt-popup og en [booking-popup](/ai/booking-modal) på samme side — med forskjellige knapper.
 </Tip>

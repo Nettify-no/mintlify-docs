@@ -7,23 +7,6 @@ description: 'Utvid nettsiden din med flere undersider'
 
 De fleste nettsider har mer enn bare en forside. Med Nettify kan du enkelt lage nye undersider for å organisere innholdet ditt.
 
-<CardGroup cols={2}>
-  <Card title="Typiske sider for bedrifter" icon="building">
-    - Forside
-    - Om oss
-    - Tjenester / Produkter
-    - Priser
-    - Kontakt
-  </Card>
-  <Card title="Ekstra sider du kan vurdere" icon="sparkles">
-    - Blogg / Aktuelt
-    - Galleri / Prosjekter
-    - Ofte stilte spørsmål (FAQ)
-    - Karriere / Ledige stillinger
-    - Personvern / Vilkår
-  </Card>
-</CardGroup>
-
 ---
 
 ## Slik lager du en ny side
@@ -31,10 +14,6 @@ De fleste nettsider har mer enn bare en forside. Med Nettify kan du enkelt lage 
 <Steps>
   <Step title="Fortell Nettify AI hva siden skal handle om">
     Gi en tydelig beskrivelse av hva siden skal inneholde og hvem den er for.
-
-    <Tip>
-      **Eksempel:** «Lag en ny side som heter 'Våre tjenester'. Den skal vise de fire hovedtjenestene våre: maling, snekkerarbeid, rørleggerarbeid og elektrisk arbeid. Hver tjeneste skal ha en kort beskrivelse og et bilde.»
-    </Tip>
   </Step>
 
   <Step title="Nettify AI bygger siden for deg">
@@ -43,46 +22,156 @@ De fleste nettsider har mer enn bare en forside. Med Nettify kan du enkelt lage 
 
   <Step title="Se over og juster">
     Gå gjennom siden. Vil du endre noe? Bare si det.
-
-    - «Legg til priser på hver tjeneste»
-    - «Endre rekkefølgen så maling kommer først»
-    - «Legg til en kontaktknapp nederst»
   </Step>
 
   <Step title="Siden legges automatisk i menyen">
-    Den nye siden dukker opp i navigasjonen på nettsiden din, slik at besøkende enkelt finner den.
+    Den nye siden dukker opp i navigasjonen på nettsiden din.
   </Step>
 </Steps>
 
 ---
 
-## Eksempler på nye sider
+## Ferdige prompts for vanlige sider
 
-<AccordionGroup>
-  <Accordion title="Tjenesteside">
-    «Lag en side for 'Tjenester' med tre seksjoner: Privatmegling, Næringseiendom og Utleiemegling. Hver seksjon skal ha en overskrift, en kort tekst og en 'Les mer'-knapp.»
-  </Accordion>
+### Tjenesteside
 
-  <Accordion title="Om oss-side">
-    «Lag en 'Om oss'-side. Vi heter Fjordbygg AS og har holdt på siden 2008. Vi er 12 ansatte i Stavanger og spesialiserer oss på rehabilitering av eldre bygg. Vis gjerne teamet med navn og titler.»
-  </Accordion>
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
 
-  <Accordion title="Kontaktside">
-    «Lag en kontaktside med adresse, telefon, e-post og et kontaktskjema. Adressen vår er Storgata 15, 0182 Oslo. Legg gjerne til et kart.»
-  </Accordion>
+```
+Lag en ny side som heter «Våre tjenester». Den skal ha:
 
-  <Accordion title="Prisside">
-    «Lag en prisside for treningssenteret vårt med tre abonnementer: Basis (299 kr/mnd), Pluss (449 kr/mnd) og Premium (599 kr/mnd). Vis hva som er inkludert i hvert.»
-  </Accordion>
+1. Hero-seksjon:
+   - Overskrift: «Tjenester vi tilbyr»
+   - Kort intro: «Vi hjelper deg med alt fra [tjeneste 1] til [tjeneste 3].»
+   - Fint bakgrunnsbilde som passer til bransjen vår
 
-  <Accordion title="FAQ-side">
-    «Lag en FAQ-side med svar på de vanligste spørsmålene vi får:
-    - Hvordan bestiller jeg?
-    - Hva er leveringstiden?
-    - Kan jeg returnere varer?
-    - Har dere garanti?»
-  </Accordion>
-</AccordionGroup>
+2. Tjenesteseksjon med 3-4 tjenester i et pent grid, hver med:
+   - Ikon eller bilde
+   - Tjenestenavn
+   - Beskrivelse på 2-3 setninger
+   - «Kontakt oss»-knapp
+
+3. «Slik jobber vi»-seksjon med 3-4 nummererte steg med ikoner og linjer mellom
+
+4. CTA-seksjon nederst: «Klar for å komme i gang?» med en kontaktknapp
+
+Design: profesjonelt, rent og moderne med god spacing mellom seksjonene.
+```
+
+---
+
+### Om oss-side
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Lag en «Om oss»-side. Her er informasjonen:
+
+Bedriftsnavn: [navn]
+Grunnlagt: [årstall]
+Sted: [sted]
+Antall ansatte: [antall]
+Bransje: [bransje]
+Kort om oss: [beskriv bedriften i noen setninger]
+
+Siden skal ha et flott og profesjonelt design med:
+1. Hero med overskrift «Om [bedriftsnavn]» og et inspirerende bakgrunnsbilde
+2. En «Vår historie»-seksjon med 2-3 avsnitt og et bilde ved siden av teksten
+3. En «Våre verdier»-seksjon med 3 verdier som ikoner med kort tekst i et fint grid
+4. En «Møt teamet»-seksjon med profilkort (rundt bilde, navn, tittel, kort bio)
+5. En CTA nederst: «Vil du vite mer? Ta kontakt!» med en fin knapp
+
+Bruk god spacing, moderne typografi og subtile animasjoner.
+```
+
+---
+
+### Kontaktside
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Lag en kontaktside med et rent og innbydende design. Den skal ha:
+
+1. Overskrift: «Kontakt oss»
+2. Kort intro: «Vi er her for å hjelpe. Send oss en melding, ring oss, eller stikk innom.»
+3. To kolonner med fin layout:
+   - Venstre: Kontaktskjema med feltene Navn, E-post, Telefon, Emne (dropdown), Melding og en «Send melding»-knapp med hover-effekt
+   - Høyre: Kontaktinfo med ikoner for telefon, e-post, adresse og åpningstider. Fint designet med god spacing.
+4. Google Maps-kart i full bredde under kolonnene som viser adressen vår: [din adresse]
+5. FAQ-seksjon med 3-4 vanlige spørsmål om kontakt og responstid
+
+Kontaktinfo:
+- Telefon: [nummer]
+- E-post: [e-post]
+- Adresse: [adresse]
+- Åpningstider: Man-Fre 08-16
+
+Design: rent, moderne, med avrundede hjørner på skjemafeltene og subtile skygger.
+```
+
+---
+
+### Prisside
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Lag en prisside med et profesjonelt og tydelig design. Den skal ha:
+
+1. Overskrift: «Priser»
+2. Kort intro: «Transparente priser uten skjulte kostnader.»
+3. Priskort i et fint grid med visuelt hierarki:
+   - [Tjeneste 1]: [pris] — inkluderer [hva som er inkludert]
+   - [Tjeneste 2]: [pris] — inkluderer [hva som er inkludert]
+   - [Tjeneste 3]: [pris] — inkluderer [hva som er inkludert]
+   Det midterste kortet skal fremheves som «Mest populær» med accentfarge
+4. Hvert kort skal ha en sjekkmerke-liste med hva som er inkludert og en «Velg pakke»-knapp
+5. En FAQ-seksjon med spørsmål om priser
+6. CTA nederst: «Usikker på hva du trenger? Kontakt oss for et skreddersydd tilbud.»
+
+Design: moderne pristabell-layout med avrundede hjørner, subtile skygger og god typografi.
+```
+
+---
+
+### FAQ-side
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Lag en FAQ-side med et ryddig og brukervennlig design. Den skal ha:
+
+1. Overskrift: «Ofte stilte spørsmål»
+2. Kort intro: «Her finner du svar på de vanligste spørsmålene vi får.»
+3. Spørsmålene organisert i kategorier med accordion-elementer:
+
+Kategori: «Generelt»
+- «Hva gjør [bedriftsnavn]?» — [svar]
+- «Hvor holder dere til?» — [svar]
+
+Kategori: «Priser og betaling»
+- «Hva koster tjenestene?» — [svar]
+- «Hvilke betalingsmetoder godtar dere?» — [svar]
+
+Kategori: «Levering og garanti»
+- «Hvor lang er leveringstiden?» — [svar]
+- «Tilbyr dere garanti?» — [svar]
+
+4. CTA nederst: «Har du andre spørsmål?» med en kontaktknapp
+
+Design: rent og oversiktlig med god spacing. Kategoriene skal ha tydelige overskrifter. Accordion-elementer med pluss/minus-ikoner og smooth animasjoner.
+```
 
 ---
 

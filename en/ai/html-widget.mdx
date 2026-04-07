@@ -18,10 +18,6 @@ An HTML widget lets you embed content from other services directly on your websi
 <Steps>
   <Step title="Find the embed code from your service">
     Most services have an **"Embed"** or **"Share"** button that gives you an HTML code. Copy this code.
-
-    <Tip>
-      The code usually looks like `<iframe src="..."></iframe>` or `<script>...</script>`. Don't worry about what it means — just copy the whole thing.
-    </Tip>
   </Step>
 
   <Step title="Tell Nettify AI what you want to do">
@@ -35,47 +31,117 @@ An HTML widget lets you embed content from other services directly on your websi
 
 ---
 
-## Example instructions
+## Ready-made prompts for popular widgets
+
+### Calendly booking widget
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
 
 ```
-"Add this Calendly widget to the contact section:
-<iframe src="https://calendly.com/mycompany/30min" width="100%" height="700"></iframe>"
-```
+Add a Calendly booking widget to the contact section on the homepage.
+Use this code:
+<iframe src="https://calendly.com/[your-calendly-url]/30min" width="100%" height="700" frameborder="0"></iframe>
 
-```
-"Embed this Google Maps map at the bottom of the page:
-<iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="450"></iframe>"
-```
-
-```
-"Add this Trustpilot widget below the testimonials:
-[paste code here]"
+Place the widget in its own section with:
+- Heading: "Book a Meeting With Us"
+- Short intro: "Pick a time that works for you and we'll have a no-obligation chat."
+- Design: centered, with good padding around the widget. Clean background.
 ```
 
 ---
 
-## Popular widgets for businesses
+### Google Maps map
 
-<CardGroup cols={2}>
-  <Card title="Booking system" icon="calendar-check">
-    Calendly, Tidycal, or Acuity — let customers book appointments directly on your website.
-  </Card>
-  <Card title="Google Maps" icon="map-location-dot">
-    Show your business location with an interactive map.
-  </Card>
-  <Card title="Reviews" icon="star">
-    Display Trustpilot, Google or Facebook reviews automatically.
-  </Card>
-  <Card title="Chat widget" icon="comments">
-    Add a chat bubble from Tidio, Crisp or similar.
-  </Card>
-  <Card title="Social media" icon="share-nodes">
-    Embed Instagram feeds, Facebook pages or YouTube videos.
-  </Card>
-  <Card title="Payment links" icon="credit-card">
-    Add payment buttons from Stripe, PayPal or other payment providers.
-  </Card>
-</CardGroup>
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Embed a Google Maps map showing our address: [your address].
+Place the map in the contact section with:
+- Heading: "Find Us"
+- Full-width map, 400px height
+- Below the map: address, phone number and a "Get directions" link
+- Design: map with rounded corners and light shadow. Responsive on mobile.
+
+Use this code:
+<iframe src="https://www.google.com/maps/embed?pb=[your-embed-code]" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+```
+
+---
+
+### Trustpilot reviews
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Add our Trustpilot widget to the homepage, right below the testimonials.
+Use this code:
+[paste your Trustpilot embed code here]
+
+Place it in a section with:
+- Heading: "See What Our Customers Say on Trustpilot"
+- Widget centered with good padding
+- Design: light background that matches the rest of the page.
+```
+
+---
+
+### Chat widget (Tidio/Crisp)
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Add a chat widget to our website that appears on all pages.
+Use this code:
+[paste your chat widget code here]
+
+The chat bubble should appear in the bottom right corner.
+It should not block important content on mobile.
+```
+
+---
+
+### YouTube video
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Embed a YouTube video in its own section on the homepage.
+Use this video: [your YouTube URL]
+The section should have:
+- Heading: "See How We Work"
+- Video centered in 16:9 format, max 800px width
+- Below the video: a short description and a "Contact us" button
+- Design: dark background with good contrast. Video with rounded corners and shadow.
+```
+
+---
+
+### Instagram feed
+
+<Tip>
+  **Copy this prompt and paste it into Nettify AI:**
+</Tip>
+
+```
+Embed our Instagram feed on the homepage, just above the footer.
+Use this code:
+[paste your Instagram embed code here]
+
+The section should have:
+- Heading: "Follow Us on Instagram"
+- A link to our Instagram profile: @[username]
+- Design: show the latest 6-9 images in a grid. Clean background.
+```
 
 <Warning>
   Only use embed codes from services you trust. Unknown code can negatively affect your website.

@@ -9,66 +9,98 @@ En booking-popup (også kalt modal) er et vindu som dukker opp når kunden klikk
 
 ---
 
-## Slik lager du en booking-popup
+## Ferdige prompts for booking-popups
 
-<Steps>
-  <Step title="Beskriv hva popupen skal inneholde">
-    Fortell Nettify AI hva slags booking du trenger og hvilke felter kunden skal fylle ut.
-  </Step>
+### Generell booking-popup
 
-  <Step title="Velg hvor knappen skal plasseres">
-    Si hvor på nettsiden **«Book time»**-knappen skal vises — for eksempel i hero-seksjonen, på tjenestesiden eller i menyen.
-  </Step>
-
-  <Step title="Tilpass utseendet">
-    Be Nettify AI om å justere farger, tekst eller felter til det passer bedriften din.
-  </Step>
-</Steps>
-
----
-
-## Eksempler på instruksjoner
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
 
 ```
-«Lag en booking-popup som åpnes når man klikker 'Book time'.
-Skjemaet skal ha feltene: Navn, Telefon, E-post, Ønsket dato og Melding.
-Legg knappen i hero-seksjonen.»
-```
+Lag en booking-popup med et fint og profesjonelt design som åpnes når man klikker «Book time»-knappen.
 
-```
-«Lag en bestillingsmodal for frisørsalongen vår.
-Kunden skal velge mellom: Herreklipp, Dameklipp eller Farging.
-Legg til felter for navn, telefon og foretrukket tidspunkt.»
-```
+Popupen skal ha:
+- Overskrift: «Book en tid»
+- Kort tekst: «Fyll ut skjemaet under, så tar vi kontakt for å bekrefte.»
+- Skjemafelt med fint design (avrundede hjørner, god spacing):
+  - Navn (påkrevd)
+  - Telefon (påkrevd)
+  - E-post (påkrevd)
+  - Ønsket dato (datofelt)
+  - Melding (valgfritt tekstfelt)
+- «Send booking»-knapp i accentfargen
+- Lukk-knapp (X) øverst til høyre
 
-```
-«Legg til en 'Bestill befaring'-knapp på tjenestesiden.
-Når man klikker, åpnes en popup med et kort skjema:
-Navn, Adresse, Telefon og en beskrivelse av jobben.»
+Design: moderne modal med mørk overlay-bakgrunn, hvit popup med avrundede hjørner og subtil skygge. Smooth åpne/lukke-animasjon.
+
+Bekreftelsesmelding etter innsending: «Takk for din booking! Vi bekrefter tidspunktet innen 24 timer.»
+
+Legg «Book time»-knappen i hero-seksjonen og i menyen.
 ```
 
 ---
 
-## Tips for en god booking-popup
+### Frisør / Skjønnhetssalong
 
-<CardGroup cols={2}>
-  <Card title="Hold det kort" icon="list-check">
-    Ikke be om mer informasjon enn nødvendig. Navn, telefon og ønsket tid er ofte nok til å komme i gang.
-  </Card>
-  <Card title="Tydelig knappetekst" icon="hand-pointer">
-    Bruk konkret tekst som **«Book time»**, **«Bestill befaring»** eller **«Få et tilbud»** — unngå generiske knapper som «Send».
-  </Card>
-  <Card title="Bekreftelsesmelding" icon="circle-check">
-    Be Nettify AI legge til en bekreftelse etter innsending, som «Takk! Vi kontakter deg innen 24 timer.»
-  </Card>
-  <Card title="Mobilvenlig" icon="mobile-screen">
-    Nettify AI lager automatisk popups som fungerer bra på både mobil og desktop.
-  </Card>
-</CardGroup>
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
 
-<Info>
-  **Bruker du et eksternt bookingsystem?** Du kan også bygge inn Calendly, Tidycal eller lignende i en popup. Se guiden for [HTML-widgets](/ai/html-widget).
-</Info>
+```
+Lag en booking-popup for frisørsalongen vår med et elegant og innbydende design.
+
+Popupen skal ha:
+- Overskrift: «Bestill time»
+- Kort tekst: «Velg behandling og tidspunkt — vi gleder oss til å ta imot deg!»
+- Skjemafelt:
+  - Navn
+  - Telefon
+  - Behandling (dropdown): «Herreklipp», «Dameklipp», «Farging», «Styling», «Annet»
+  - Foretrukket dag (datofelt)
+  - Foretrukket tidspunkt (dropdown): «Morgen (08-11)», «Midt på dagen (11-14)», «Ettermiddag (14-17)»
+  - Spesielle ønsker (valgfritt tekstfelt)
+- «Bestill time»-knapp
+- Lukk-knapp
+
+Design: varmt og innbydende. Bruk myke farger og avrundede hjørner. Responsive for mobil.
+
+Bekreftelse: «Takk! Vi sender deg en bekreftelse på SMS innen kort tid.»
+
+Legg «Bestill time»-knappen i hero-seksjonen og som en fast knapp nederst på mobil.
+```
+
+---
+
+### Håndverker / Befaring
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Lag en popup for å bestille befaring med et profesjonelt og tillitvekkende design.
+
+Popupen skal ha:
+- Overskrift: «Bestill gratis befaring»
+- Kort tekst: «Vi kommer til deg og gir et uforpliktende tilbud.»
+- Skjemafelt:
+  - Navn (påkrevd)
+  - Telefon (påkrevd)
+  - E-post
+  - Adresse (påkrevd)
+  - Type jobb (dropdown): «Rørleggerarbeid», «Elektrisk arbeid», «Maling», «Snekkerarbeid», «Annet»
+  - Beskrivelse av jobben (tekstfelt)
+  - Foretrukket uke (dropdown med kommende uker)
+- «Bestill befaring»-knapp
+- Lukk-knapp
+
+Design: profesjonelt med god spacing, tydelige labels over hvert felt og en fin layout.
+
+Bekreftelse: «Takk! Vi kontakter deg innen 1 virkedag for å avtale tidspunkt.»
+
+Legg «Bestill befaring»-knappen på forsiden og på tjenestesiden.
+```
 
 ---
 
@@ -79,3 +111,7 @@ Alle bookinger som sendes inn via popupen, havner under **«Henvendelser»**-fan
 <Tip>
   **Har du Nettify PRO?** Da får du også varsel på e-post hver gang noen sender inn en booking — slik at du aldri går glipp av en henvendelse.
 </Tip>
+
+<Info>
+  **Bruker du et eksternt bookingsystem?** Du kan også bygge inn Calendly, Tidycal eller lignende i en popup. Se guiden for [HTML-widgets](/ai/html-widget).
+</Info>

@@ -18,10 +18,6 @@ En HTML-widget lar deg bygge inn innhold fra andre tjenester direkte på nettsid
 <Steps>
   <Step title="Finn embed-koden fra tjenesten din">
     De fleste tjenester har en **«Embed»**- eller **«Bygg inn»**-knapp som gir deg en HTML-kode. Kopier denne koden.
-
-    <Tip>
-      Koden ser vanligvis ut som `<iframe src="..."></iframe>` eller `<script>...</script>`. Ikke bekymre deg for hva den betyr — bare kopier alt sammen.
-    </Tip>
   </Step>
 
   <Step title="Fortell Nettify AI hva du vil gjøre">
@@ -35,47 +31,117 @@ En HTML-widget lar deg bygge inn innhold fra andre tjenester direkte på nettsid
 
 ---
 
-## Eksempler på instruksjoner
+## Ferdige prompts for populære widgets
+
+### Calendly bookingwidget
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
 
 ```
-«Legg til denne Calendly-widgeten i kontaktseksjonen:
-<iframe src="https://calendly.com/mittfirma/30min" width="100%" height="700"></iframe>»
-```
+Legg til en Calendly bookingwidget i kontaktseksjonen på forsiden.
+Bruk denne koden:
+<iframe src="https://calendly.com/[din-calendly-url]/30min" width="100%" height="700" frameborder="0"></iframe>
 
-```
-«Bygg inn dette Google Maps-kartet nederst på siden:
-<iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="450"></iframe>»
-```
-
-```
-«Legg til denne Trustpilot-widgeten under kundeomtalene:
-[lim inn kode her]»
+Plasser widgeten i en egen seksjon med:
+- Overskrift: «Book et møte med oss»
+- Kort intro: «Velg et tidspunkt som passer deg, så tar vi en uforpliktende prat.»
+- Design: sentrert, med god padding rundt widgeten. Ren bakgrunn.
 ```
 
 ---
 
-## Populære widgets for bedrifter
+### Google Maps kart
 
-<CardGroup cols={2}>
-  <Card title="Bookingsystem" icon="calendar-check">
-    Calendly, Tidycal, eller Acuity — la kundene booke tid direkte på nettsiden.
-  </Card>
-  <Card title="Google Maps" icon="map-location-dot">
-    Vis bedriftens beliggenhet med et interaktivt kart.
-  </Card>
-  <Card title="Anmeldelser" icon="star">
-    Vis Trustpilot-, Google- eller Facebook-anmeldelser automatisk.
-  </Card>
-  <Card title="Chat-widget" icon="comments">
-    Legg til en chat-boble fra Tidio, Crisp eller lignende.
-  </Card>
-  <Card title="Sosiale medier" icon="share-nodes">
-    Bygg inn Instagram-feed, Facebook-side eller YouTube-videoer.
-  </Card>
-  <Card title="Betalingslenker" icon="credit-card">
-    Legg inn betalingsknapper fra Vipps, Stripe eller PayPal.
-  </Card>
-</CardGroup>
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Bygg inn et Google Maps-kart som viser adressen vår: [din adresse].
+Plasser kartet i kontaktseksjonen med:
+- Overskrift: «Finn oss»
+- Kartet i full bredde, 400px høyde
+- Under kartet: adresse, telefonnummer og «Få veibeskrivelse»-lenke
+- Design: kartet med avrundede hjørner og lett skygge. Responsivt på mobil.
+
+Bruk denne koden:
+<iframe src="https://www.google.com/maps/embed?pb=[din-embed-kode]" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+```
+
+---
+
+### Trustpilot anmeldelser
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Legg til Trustpilot-widgeten vår på forsiden, rett under kundeomtalene.
+Bruk denne koden:
+[lim inn din Trustpilot embed-kode her]
+
+Plasser den i en seksjon med:
+- Overskrift: «Se hva kundene våre sier på Trustpilot»
+- Widgeten sentrert med god padding
+- Design: lys bakgrunn som matcher resten av siden.
+```
+
+---
+
+### Chat-widget (Tidio/Crisp)
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Legg til en chat-widget på nettsiden vår som vises på alle sider.
+Bruk denne koden:
+[lim inn din chat-widget kode her]
+
+Chat-boblen skal vises nederst til høyre.
+Den skal ikke blokkere viktig innhold på mobil.
+```
+
+---
+
+### YouTube-video
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Bygg inn en YouTube-video i en egen seksjon på forsiden.
+Bruk denne videoen: [din YouTube-URL]
+Seksjonen skal ha:
+- Overskrift: «Se hvordan vi jobber»
+- Videoen sentrert med 16:9 format, maks 800px bredde
+- Under videoen: en kort beskrivelse og en «Kontakt oss»-knapp
+- Design: mørk bakgrunn med god kontrast. Videoen med avrundede hjørner og skygge.
+```
+
+---
+
+### Instagram-feed
+
+<Tip>
+  **Kopier denne prompten og lim inn i Nettify AI:**
+</Tip>
+
+```
+Bygg inn Instagram-feeden vår på forsiden, rett over bunnteksten.
+Bruk denne koden:
+[lim inn din Instagram embed-kode her]
+
+Seksjonen skal ha:
+- Overskrift: «Følg oss på Instagram»
+- En lenke til Instagram-profilen vår: @[brukernavn]
+- Design: vis de siste 6-9 bildene i et grid. Ren bakgrunn.
+```
 
 <Warning>
   Bruk kun embed-koder fra tjenester du stoler på. Ukjent kode kan påvirke nettsiden din negativt.
