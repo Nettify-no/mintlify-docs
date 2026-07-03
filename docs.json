@@ -48,7 +48,7 @@
           },
           {
             "group": "Domene",
-            "pages": ["domene/kjop-domene", "domene/koble-til-domene"]
+            "pages": ["domene/kjop-domene", "domene/koble-til-domene", "domene/epost"]
           }
         ]
       },
@@ -86,7 +86,7 @@
           },
           {
             "group": "Domain",
-            "pages": ["en/domene/kjop-domene", "en/domene/koble-til-domene"]
+            "pages": ["en/domene/kjop-domene", "en/domene/koble-til-domene", "en/domene/epost"]
           }
         ]
       }
