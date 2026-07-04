@@ -24,16 +24,16 @@ En e-postadresse på ditt eget domene — for eksempel **post@mittfirma.no** —
     Gå til [Google Workspace](https://workspace.google.com/solutions/business-email/) og opprett en konto for bedriften din. Velg domenet ditt når du blir spurt.
   </Step>
 
-  <Step title="Kopier MX-recorden">
-    Etter registreringen viser Google deg en **MX-record**. Den forteller internett hvor e-posten til domenet ditt skal sendes. Kopier verdien.
+  <Step title="Verifiser at du eier domenet (TXT eller CNAME)">
+    Google gir deg først en **TXT-record** (som starter med `google-site-verification=`) for å bekrefte at du eier domenet. I noen tilfeller får du en **CNAME-record** i stedet. Kopier verdien, gå til **Domene** i Nettify-dashboardet og lim den inn. Dette beviser bare at domenet er ditt — det setter ikke opp e-post ennå.
   </Step>
 
-  <Step title="Legg MX-recorden inn i Nettify">
-    Gå til **Domene** i Nettify-dashboardet og lim inn MX-recorden du fikk fra Google. Da vet domenet ditt at e-post skal gå til Google Workspace.
+  <Step title="Legg inn MX-recorden for e-post">
+    Deretter viser Google deg en **MX-record** (vanligvis `smtp.google.com`). Den forteller internett hvor e-posten til domenet ditt skal sendes. Kopier verdien og lim den inn under **Domene** i Nettify. Uten denne kan du ikke motta e-post.
   </Step>
 
   <Step title="Følg de siste stegene hos Google">
-    Gå tilbake til Google Workspace og fullfør oppsettet. Google sjekker automatisk at MX-recorden er riktig lagt inn.
+    Gå tilbake til Google Workspace og fullfør oppsettet. Google sjekker automatisk at både verifiseringen og MX-recorden er riktig lagt inn.
   </Step>
 
   <Step title="Ferdig — send og motta e-post">

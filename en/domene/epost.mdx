@@ -24,16 +24,16 @@ An email address on your own domain — for example **hello@mycompany.no** — l
     Go to [Google Workspace](https://workspace.google.com/solutions/business-email/) and create an account for your business. Choose your domain when prompted.
   </Step>
 
-  <Step title="Copy the MX record">
-    After signing up, Google shows you an **MX record**. It tells the internet where email for your domain should be delivered. Copy the value.
+  <Step title="Verify you own the domain (TXT or CNAME)">
+    Google first gives you a **TXT record** (starting with `google-site-verification=`) to confirm you own the domain. In some cases you get a **CNAME record** instead. Copy the value, go to **Domain** in your Nettify dashboard and paste it in. This only proves the domain is yours — it doesn't set up email yet.
   </Step>
 
-  <Step title="Add the MX record in Nettify">
-    Go to **Domain** in your Nettify dashboard and paste in the MX record you got from Google. This tells your domain to send email to Google Workspace.
+  <Step title="Add the MX record for email">
+    Next, Google shows you an **MX record** (usually `smtp.google.com`). It tells the internet where email for your domain should be delivered. Copy the value and paste it under **Domain** in Nettify. Without it, you can't receive email.
   </Step>
 
   <Step title="Follow the final steps at Google">
-    Go back to Google Workspace and complete the setup. Google automatically checks that the MX record is added correctly.
+    Go back to Google Workspace and complete the setup. Google automatically checks that both the verification and the MX record are added correctly.
   </Step>
 
   <Step title="Done — send and receive email">
