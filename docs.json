@@ -19,12 +19,17 @@
         "groups": [
           {
             "group": "Kom i gang",
-            "pages": ["index", "kom-i-gang"]
+            "pages": [
+              "index",
+              "kom-i-gang"
+            ]
           },
           {
             "group": "Nettify AI",
             "pages": [
               "ai/snakk-med-ai",
+              "ai/rediger-nettsiden",
+              "ai/endre-omrade",
               "ai/lag-ny-seksjon",
               "ai/endre-bilder",
               "ai/endre-tekst",
@@ -48,7 +53,11 @@
           },
           {
             "group": "Domene",
-            "pages": ["domene/kjop-domene", "domene/koble-til-domene", "domene/epost"]
+            "pages": [
+              "domene/kjop-domene",
+              "domene/koble-til-domene",
+              "domene/epost"
+            ]
           }
         ]
       },
@@ -57,12 +66,17 @@
         "groups": [
           {
             "group": "Get started",
-            "pages": ["en/index", "en/kom-i-gang"]
+            "pages": [
+              "en/index",
+              "en/kom-i-gang"
+            ]
           },
           {
             "group": "Nettify AI",
             "pages": [
               "en/ai/snakk-med-ai",
+              "en/ai/rediger-nettsiden",
+              "en/ai/endre-omrade",
               "en/ai/lag-ny-seksjon",
               "en/ai/endre-bilder",
               "en/ai/endre-tekst",
@@ -86,7 +100,11 @@
           },
           {
             "group": "Domain",
-            "pages": ["en/domene/kjop-domene", "en/domene/koble-til-domene", "en/domene/epost"]
+            "pages": [
+              "en/domene/kjop-domene",
+              "en/domene/koble-til-domene",
+              "en/domene/epost"
+            ]
           }
         ]
       }
